@@ -9,12 +9,9 @@ void insertionSort(T* arr, int length) {
 				arr[j + 1] = arr[j];
 				--toInsert;
 			}
-			else {
-				arr[toInsert] = lastElem;
+			else 
 				break;
-			}
 		}
-		if (toInsert != i)
-			arr[toInsert] = lastElem;
+		arr[toInsert] = lastElem;
 	}
 }

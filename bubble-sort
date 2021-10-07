@@ -1,0 +1,20 @@
+//bubble sort with swap-optimization
+//written on 7.10.2021
+
+#include"swap.cpp" //alternative to std::swap, which could be included easily.
+
+template <class T>
+void bubbleSort(T* arr, int length) {
+	bool swapped = false;
+	for (int i = 0; i < length; i++) {
+		swapped = false;
+		for (int j = i; j < length; j++) {
+			if (arr[i] > arr[j]) {
+				swap(arr[i], arr[j]);
+				swapped = true;
+			}
+		}
+		if (!swapped)	
+			break;
+	}
+}

@@ -1,7 +1,7 @@
 #include<iostream>
 #include<queue>
 
-//working only with unsigned int.
+//working only with (unsigned) int.
 
 void radixSort(int* arr, int len) {
 	std::queue<int> holders[10];
